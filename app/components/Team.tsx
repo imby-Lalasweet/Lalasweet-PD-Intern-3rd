@@ -117,20 +117,6 @@ export default function Team() {
                                     dangerouslySetInnerHTML={{ __html: interview.content }}
                                 />
 
-                                {interview.link && (
-                                    <div className="mt-8">
-                                        <Link
-                                            href={interview.link.url}
-                                            target="_blank"
-                                            className="inline-flex items-center gap-2 text-neon-blue hover:text-white transition-colors duration-normal group/link"
-                                        >
-                                            <span className="text-lg font-bold border-b border-neon-blue/30 group-hover/link:border-white pb-0.5 transition-all duration-normal">
-                                                {interview.link.text}
-                                            </span>
-                                            <ArrowUpRight className="w-5 h-5 transition-transform duration-normal group-hover/link:translate-x-1 group-hover/link:-translate-y-1" />
-                                        </Link>
-                                    </div>
-                                )}
                             </div>
                         </div>
                     ))}
